@@ -1,7 +1,7 @@
 import http from 'k6/http';
 import { group, sleep } from 'k6';
 
-const BASE_URL = `http://${__ENV.HOST || 'localhost'}:8080/tools.descartes.teastore.webui`;
+const BASE_URL = `http://10.4.1.32:8080/tools.descartes.teastore.webui`;
 
 const groupResponseTimes = {};
 
