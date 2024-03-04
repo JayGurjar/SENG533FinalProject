@@ -1,7 +1,7 @@
 import http from 'k6/http';
 import { group, sleep } from 'k6';
 
-const BASE_URL = `http://10.4.1.32:8080/tools.descartes.teastore.webui`;
+const BASE_URL = `http://10.1.4.32:8080/tools.descartes.teastore.webui`;
 
 const groupResponseTimes = {};
 
@@ -14,7 +14,7 @@ export const options = {
             vus: 10,
             iterations: 200,
             maxDuration: '300s',
-        },
+        },  
         increaseIterations: {
             executor: 'shared-iterations',
             vus: 10,
